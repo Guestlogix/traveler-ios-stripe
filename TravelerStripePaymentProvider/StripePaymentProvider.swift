@@ -26,6 +26,10 @@ public struct StripePaymentProvider: PaymentProvider  {
 
         return (addCardViewController, paymentHandler)
     }
+
+    public init() {
+        
+    }
 }
 
 class StripePaymentHandler: NSObject, PaymentHandler, STPAddCardViewControllerDelegate {
